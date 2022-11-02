@@ -31,7 +31,7 @@ def create(product: Product):
     return {"data": product}
 
 
-@app.post("/products/{id}", status_code=status.HTTP_204_NO_CONTENT)
+@app.delete("/products/{id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete(id: str):
     cursor.execute("DELETE FROM products WHERE id = %s RETURNING *", (str(id)))
     deleted_product = cursor.fetchone()
