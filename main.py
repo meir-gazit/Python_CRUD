@@ -44,8 +44,8 @@ def delete(id: str):
 
 @app.put("/products/{id}")
 def update(id: int, product: Product):
-    cursor.execute("UPDATE products title = %s, content = %s, published = %s RETURNING *", 
-    (product.title, product.content, product.published))
+    cursor.execute("UPDATE products name = %s, description = %s, for_sale = %s, in_stock = %s, price = %s WHERE id = %s RETURNING *", 
+    (product.name, product.description, product.for_sale, product.in_stock, product.price, (str(id))))
     updated_product = cursor.fetchone()
     DB.conn.commit()
     if not updated_product:
