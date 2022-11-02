@@ -23,6 +23,6 @@ In order to use the sample you should do some steps
 9. go to the URL from your web browser or postman or any other app that can communicate with this simple sample and call its endpoints
 
 
-Hope it Will help someone.
+Hope it will help someone.
 
 Enjoy.
