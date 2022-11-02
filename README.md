@@ -1,4 +1,4 @@
-# Python_CRUD
+# Python CRUD operation
 
 This is a very simple example of how to create an Python CRUD operation using the FASTAPI library, the DB module opens a connection to very simple Postgres DB with only products table, there are 5 endpoints in main.py, one to get everything, another to get by ID, one to create, one to update and last one to delete products, the product schema is very simple and all the code is just to give you an idea of how CRUD should look like with Python.
 
