@@ -12,15 +12,15 @@ In order to use the sample you should do some steps
 
 4. point your interpreter to use the virtual environment by the name you defined
 
-5. start the virtual environment by calling "environment name/Scripts/ativate.bat"
+5. activate the virtual environment by calling "environment name/Scripts/ativate.bat"
 
-6. install FastAPI, psycopg2 and pydantic dependencies, they will be installed in the VE and not in the global environment
+6. install FastAPI, psycopg2 and pydantic library dependencies, they will be installed in the virtual environment and not in your global environment
 
-7. link the project to use your python that in the bin folder in the VE
+7. link the project to use your python exe that in the bin folder in the virtual environment
 
 8. start your server using the "uvicorn mainapp --reload" command, see the docs in the FastAPI website [https://fastapi.tiangolo.com/tutorial] for more info
 
-9. go to the URL from your web browser or postman or any other app that can communicate with this simple sample
+9. go to the URL from your web browser or postman or any other app that can communicate with this simple sample and call its endpoints
 
 
 Hope it Will help someone.
